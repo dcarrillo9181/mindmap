@@ -5,7 +5,7 @@ export const selectAllProjects = () => {
 };
 
 export const selectProjectById = (id) => {
-    return PROJECTS.find((project) => project.id === id);
+    return PROJECTS.find((project) => project.id === parseInt(id));
 };
 
 export const selectFeaturedProject = () => {
